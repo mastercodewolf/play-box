@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EmulatorJS</title>
+
+        <link rel = icon href = docs/favicon.ico sizes = "16x16 32x32 48x48 64x64" type = image/vnd.microsoft.icon>
+        <meta name = viewport content = "width = device-width, initial-scale = 1">
+
+        <style>
+            .ejs_virtualGamepad_open{
+              display:none;
+            }
+            body, html {
+                height: 100%;
+            }
+
+            body {
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 20px;
+                margin: 0;
+                overflow: hidden;
+                background-color: #222
+            }
+
+            body, #box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #box {
+                color: #aaa;
+                height: 20em;
+                width: 30em;
+                max-width: 80%;
+                max-height: 80%;
+                background-color: #333;
+                border-radius: 0.4em;
+                border: 2px solid #555;
+                position: relative;
+                flex-direction: column;
+                transition-duration: 0.2s;
+                overflow: hidden
+            }
+
+            #box:hover, #box[drag] {
+                border-color: #38f;
+                color: #ddd
+            }
+
+
+            #display {
+                width: 100%;
+                height: 100%
+            }
+
+        </style>
+    </head>
+
+    <body>
+    <div id="game"></div>
+        <script>
+      
+            let params = new URLSearchParams(location.search.slice(1))
+            window.EJS_player = "#game";
+            // window.EJS_gameName = parts.shift();
+            window.EJS_biosUrl = "";
+            window.EJS_gameUrl = params.get("url");
+            window.EJS_core = params.get("core");
+            window.EJS_pathtodata = "data";
+            window.EJS_startOnLoaded = true;      
+
+            let script = document.createElement("script")
+            script.src = "loader.js";
+            //script.src = "https://www.emulatorjs.com/loader.js";
+            document.body.appendChild(script);
+        
+        </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"81acc12ddb7d50bd","r":1,"version":"2023.10.0","token":"192fdaadd1094fdfa2eb6daf77e04988"}' crossorigin="anonymous"></script>
+</body>
+</html>

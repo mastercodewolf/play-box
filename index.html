@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <meta charset="utf8">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;500;900&display=swap" rel="stylesheet">
+    <style>html{ font-family: 'Chivo', sans-serif; }</style>
+    <style>
+      html{font-size:16px;}
+      *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+      }
+      .flex-x,[flex-x]{
+        display:flex;
+        flex-direction:row;
+        /* align-items:center; */
+      }
+      .flex-cx,[flex-cx]{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content: center;
+      }
+      .flex-y,[flex-y]{
+        display:flex;
+        flex-direction:column;
+        /* align-items:center; */
+      }
+      .flex-cy,[flex-cy]{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+      }
+      .space ,[space],.flex-1,[flex-1],space{flex:1;}
+
+      .gap-1rem,[gap-1rem],.gap,[gap]{gap:1rem}
+      .padding-1rem, [padding-1rem],.padding, [padding]{padding:1rem}
+      .padding-1rem-x,[padding-1rem-x]{padding-left:1rem;padding-right:1rem;}
+    </style>
+
+    <style>
+      html{
+        --primary:#03A9F4;
+      }
+      nav{
+        box-shadow:0 0 20px #0002;
+      }
+      nav ul{list-style-type:none;}
+      nav a{
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      nav a:hover{
+        opacity:1;
+      }
+    </style>
+
+
+<style>
+  a[part]{
+    color:inherit;
+    text-decoration:none;
+  }
+  [part] badge{
+    display:inline-block;
+    padding:.5rem;
+    background:#000;
+    color:white;
+    margin-bottom:.5rem;
+  }
+  [part]{
+    
+  }
+  [part] img{
+    width:100%;
+    aspect-ratio: 3/2;
+    object-fit:cover;
+  }
+  .grid-3x{
+    grid-column:3 span;
+    flex-direction:row;
+    font-size:1.75em;
+  }
+  .grid-3x img{
+    width:50%;
+  }
+</style>
+  </head>
+  <body>
+    <section style="display:grid;grid-template-columns: repeat(5, 1fr);" gap padding>
+
+      <a href="game.html?core=nes&url=games/nes/Circus Charlie.zip" part gap class="flex-y">
+        <img src="games/nes/Circus Charlie.png">
+        <div>Circus Charlie</div>
+      </a>
+      <a href="game.html?core=nes&url=games/nes/Contra.zip" part gap class="flex-y">
+        <img src="games/nes/Contra.png">
+        <div>Contra</div>
+      </a>
+      <a href="game.html?core=nes&url=games/nes/Jackal.zip" part gap class="flex-y">
+        <img src="games/nes/Jackal.png">
+        <div>Jackal</div>
+      </a>
+      <a href="game.html?core=nes&url=games/nes/Rad Race.zip" part gap class="flex-y">
+        <img src="games/nes/Rad Race.png">
+        <div>Rad Race</div>
+      </a>
+      <a href="game.html?core=nes&url=games/nes/Road Fighter.zip" part gap class="flex-y">
+        <img src="games/nes/Road Fighter.png">
+        <div>Road Fighter</div>
+      </a>
+      <a href="game.html?core=nes&url=games/nes/Super Mario Bros.zip" part gap class="flex-y">
+        <img src="games/nes/Super Mario Bros.png">
+        <div>Super Mario Bros</div>
+      </a>
+
+      <a href="game.html?core=gba&url=games/gba/FIFA 2004.zip" part gap class="flex-y">
+        <img src="games/gba/FIFA 2004.png">
+        <div>FIFA 2004</div>
+      </a>
+
+
+
+      <a href="game.html?core=gba&url=games/gba/FIFA 2004.zip" part gap class="flex-y">
+        <img src="games/gba/FIFA 2004.png">
+        <div>FIFA 2004</div>
+      </a>
+      <a href="game.html?core=gba&url=games/gba/FIFA 2005.zip" part gap class="flex-y">
+        <img src="games/gba/FIFA 2005.png">
+        <div>FIFA 2005</div>
+      </a>
+      <a href="game.html?core=gba&url=games/gba/FIFA 2006.zip" part gap class="flex-y">
+        <img src="games/gba/FIFA 2006.png">
+        <div>FIFA 2006</div>
+      </a>
+      <a href="game.html?core=gba&url=games/gba/FIFA 2007.zip" part gap class="flex-y">
+        <img src="games/gba/FIFA 2007.png">
+        <div>FIFA 2007</div>
+      </a>
+      <a href="game.html?core=gba&url=games/gba/Medal of Honor - Infiltrator (USA, Europe) (En,Fr,De).zip" part gap class="flex-y">
+        <img src="games/gba/Medal of Honor - Infiltrator (USA, Europe) (En,Fr,De).png">
+        <div>Medal of Honor</div>
+      </a>
+
+   
+      <a href="game.html?core=gba&url=games/gba/Max Payne.zip" part gap class="flex-y">
+        <img src="games/gba/Max Payne.png">
+        <div>Max Payne</div>
+      </a>
+      
+      <a href="game.html?core=gba&url=games/gba/Lord of the Rings, The - The Return of the King (USA, Europe) (En,Fr,De,Es,It).zip" part gap class="flex-y">
+        <img src="games/gba/Lord of the Rings, The - The Return of the King (USA, Europe) (En,Fr,De,Es,It).png">
+        <div>Lord of the Rings, The - The Return of the King (USA, Europe) (En,Fr,De,Es,It).zip</div>
+      </a>
+
+    
+      <a href="game.html?core=gba&url=games/gba/Grand Theft Auto Advance (USA).zip" part gap class="flex-y">
+        <img src="games/gba/Grand Theft Auto Advance (USA).png">
+        <div>Grand Theft Auto Advance (USA)</div>
+      </a>
+
+      <a href="custom.html" part gap class="flex-y">
+        <img src="custom.png"> 
+        <div>İndirdiğim Oyunu Seç</div>
+      </a>      
+
+      
+   
+
+    </section>
+  </body>
+</html>
+
